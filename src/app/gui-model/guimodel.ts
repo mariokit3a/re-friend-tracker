@@ -119,6 +119,7 @@ export class GuiModel {
                     ]
                 },
             ],
+            
             "pageList": [
                 {
                     "id": "mainmenu",
