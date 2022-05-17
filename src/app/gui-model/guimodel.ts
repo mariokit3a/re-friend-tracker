@@ -21,6 +21,13 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "Nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 1,
+                            "required": true
+                        },
+                        {
                             "id": "firstName",
                             "type": "text",
                             "name": "FirstName",
@@ -33,6 +40,14 @@ export class GuiModel {
                             "name": "Location",
                             "url": "/location",
                             "form": "LocationForm",
+                            "width": 2
+                        },
+                        {
+                            "id":   "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/Group",
+                            "form": "GroupForm",
                             "width": 2
                         },
                         {
@@ -139,6 +154,20 @@ export class GuiModel {
                             "color": "yellow",
                             "page": "locationspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "page": "groupspage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Activity",
+                            "icon": "fa-cubes",
+                            "color": "red",
+                            "page": "activityspage",
+                        },
                     ]
                 },
                 {
@@ -164,6 +193,60 @@ export class GuiModel {
                             "url": "/friend",
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "groupspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewFriend",
+                            "icon": "fa-user",
+                            "color": "red",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/group",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "activityspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewFriend",
+                            "icon": "fa-user",
+                            "color": "red",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "GroupForm"
                             }
                         },
                     ]
