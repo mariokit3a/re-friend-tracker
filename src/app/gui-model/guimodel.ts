@@ -21,16 +21,16 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id": "Nickname",
+                            "id": "firstName",
                             "type": "text",
-                            "name": "Nickname",
+                            "name": "FirstName",
                             "width": 1,
                             "required": true
                         },
                         {
-                            "id": "firstName",
+                            "id": "Nickname",
                             "type": "text",
-                            "name": "FirstName",
+                            "name": "Nickname",
                             "width": 1,
                             "required": true
                         },
@@ -160,14 +160,14 @@ export class GuiModel {
                         {
                             "id": "name",
                             "type": "text",
-                            "name": "ActivityName",
+                            "name": "Activity",
                             "width": 2,
                             "required": true
                         },
                         {
                             "id": "date",
                             "type": "date",
-                            "name": "date",
+                            "name": "Date",
                             "width": 2
                         },
                         {
@@ -332,13 +332,22 @@ export class GuiModel {
                             "icon": "fa-calendar",
                             "color": "green",
                             "form": {
-                                "form": "ActivityForm"
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
                             }
                         },
                         {
                             "type": "list",
                             "icon": "fa-calendar",
-                            "color": "blue",
+                            "color": "red",
                             "search": true,
                             "url": "/activity",
                             "form": {
@@ -366,7 +375,7 @@ export class GuiModel {
                         {
                             "type": "list",
                             "icon": "fa-home",
-                            "color": "blue",
+                            "color": "yellow",
                             "search": true,
                             "url": "/location",
                             "form": {
